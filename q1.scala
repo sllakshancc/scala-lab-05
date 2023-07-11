@@ -6,7 +6,7 @@ case _ => GCD(b,a%b)
 
 def isPrime(p: Int, n: Int=2): Boolean = n match{
     case x if (x == p) => true;
-    case x if GCD(p, x) > 1 => false;
+    case x if GCD(p, x) >= 1 => false;
     case x => isPrime(p, x+1)
 }
 
